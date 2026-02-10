@@ -20,3 +20,11 @@ input{padding:.5rem;border:1px solid #cbd5e1;border-radius:6px}
 button{background:var(--accent);color:#fff;border:none;padding:.55rem .8rem;border-radius:6px;cursor:pointer}
 footer{padding:1rem 2rem;border-top:1px solid rgba(0,0,0,0.06);text-align:center}
 @media(min-width:700px){.site-header{padding:1rem 3rem}.hero{flex-direction:row;align-items:center;justify-content:space-between}}
+
+/* Health widget styles (small, unobtrusive) */
+.health-widget{position:fixed;right:12px;bottom:12px;z-index:9999;background:var(--bg);color:var(--fg);border:1px solid rgba(0,0,0,0.08);box-shadow:0 6px 18px rgba(2,6,23,0.08);padding:8px;border-radius:8px;font-size:13px;min-width:120px}
+.health-widget .hw-title{font-weight:600;margin-bottom:4px}
+.health-widget .hw-status{font-size:12px;opacity:0.9}
+.health-widget .hw-status.hw-ok{color:green}
+.health-widget .hw-refresh{margin-top:6px;padding:4px 6px;font-size:12px;border-radius:6px}
+.health-widget .hw-close{position:absolute;top:4px;right:6px;border:none;background:transparent;font-size:14px;cursor:pointer}
