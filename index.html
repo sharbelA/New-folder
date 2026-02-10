@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Basic Frontend Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Basic Frontend Page</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome</h2>
+      <p>A minimal starter page with HTML, CSS and JS.</p>
+      <button id="toggle-theme">Toggle Theme</button>
+    </section>
+
+    <section id="features">
+      <h3>Features</h3>
+      <ul>
+        <li>Responsive layout</li>
+        <li>Theme toggle</li>
+        <li>Contact form demo</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h3>Contact</h3>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your name" required>
+        <input type="email" id="email" placeholder="Your email" required>
+        <button type="submit">Send</button>
+      </form>
+      <div id="message" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2026 Basic Frontend</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

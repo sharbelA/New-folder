@@ -1,0 +1,22 @@
+:root{
+  --bg: #ffffff;
+  --fg: #222222;
+  --accent: #0066ff;
+}
+:root[data-theme='dark']{
+  --bg: #0f1720;
+  --fg: #e6eef6;
+  --accent: #58a6ff;
+}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; margin:0; background:var(--bg); color:var(--fg); line-height:1.4}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;border-bottom:1px solid rgba(0,0,0,0.06)}
+.site-header nav a{margin-left:1rem;color:var(--accent);text-decoration:none}
+.hero{padding:2rem;background:linear-gradient(90deg, rgba(0,102,255,0.06), transparent);display:flex;flex-direction:column;gap:.5rem}
+main{max-width:900px;margin:1.5rem auto;padding:0 1rem}
+section{margin-bottom:1.25rem}
+form{display:flex;flex-direction:column;gap:.5rem;max-width:360px}
+input{padding:.5rem;border:1px solid #cbd5e1;border-radius:6px}
+button{background:var(--accent);color:#fff;border:none;padding:.55rem .8rem;border-radius:6px;cursor:pointer}
+footer{padding:1rem 2rem;border-top:1px solid rgba(0,0,0,0.06);text-align:center}
+@media(min-width:700px){.site-header{padding:1rem 3rem}.hero{flex-direction:row;align-items:center;justify-content:space-between}}
