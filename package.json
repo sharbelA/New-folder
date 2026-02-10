@@ -1,0 +1,12 @@
+{
+  "name": "basic-frontend-with-api",
+  "version": "1.0.0",
+  "description": "Simple frontend with a small products API (Express)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
